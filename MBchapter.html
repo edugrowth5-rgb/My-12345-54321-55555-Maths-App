@@ -1,0 +1,30 @@
+<body>
+    <div class="top-bar">
+        <h1>Competitive Maths - Success Zone</h1>
+    </div>
+    
+    <div class="wrapper">
+        <div id="sidebar" class="left-menu">
+            <button onclick="toggleMenu()">☰ Menu</button>
+            <nav>
+                <ul>
+                    <li><a href="MBindex.html">Home</a></li>
+                    <li><a href="#">Shortcut Formulas</a></li>
+                    <li><a href="#">Practice Questions</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="center-content">
+            <h1 id="title"></h1>
+            <div id="theory-section"></div>
+            <div id="quiz-section" style="display:none;"></div>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('sidebar').classList.toggle('collapsed');
+        }
+    </script>
+</body>
