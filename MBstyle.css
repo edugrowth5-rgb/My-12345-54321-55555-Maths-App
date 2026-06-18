@@ -1,27 +1,46 @@
 :root { --primary: #6366f1; --bg: #f8fafc; --text: #1e293b; }
+
 body { font-family: 'Segoe UI', sans-serif; background: var(--bg); margin: 0; height: 100vh; display: flex; flex-direction: column; }
+
 .top-bar { background: var(--primary); color: white; padding: 10px 20px; display: flex; align-items: center; gap: 15px; }
+
 .wrapper { display: flex; flex: 1; overflow: hidden; }
+
 .sidebar { width: 300px; background: white; padding: 20px; border-right: 1px solid #e2e8f0; transition: 0.3s; overflow-y: auto; }
+
 .sidebar.collapsed { width: 0; padding: 0; border: none; overflow: hidden; }
+
 .search-bar { width: 90%; padding: 10px; border-radius: 8px; border: 1px solid #cbd5e1; margin-bottom: 20px; }
+
 .content { flex: 1; padding: 40px; overflow-y: auto; color: var(--text); }
+
 button { background: var(--primary); color: white; border: none; padding: 8px 15px; border-radius: 6px; cursor: pointer; margin: 2px; }
+
 button:hover { opacity: 0.9; }
+
 nav button { display: block; width: 100%; text-align: left; margin-bottom: 5px; padding: 12px; font-weight: bold; }
+
 #menu-btn { font-size: 20px; background: none; }
+
 .section { background: white; padding: 20px; margin-bottom: 15px; border-radius: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+
 .section h3 { color: var(--primary); margin-top: 0; border-bottom: 2px solid #f0f0f0; padding-bottom: 10px; }
-/* Steps Section Styling */
-.steps { 
-    background: #f1f5f9; 
-    padding: 10px; 
-    border-left: 4px solid var(--primary); 
-    border-radius: 4px; 
-    margin-top: 5px; 
+
+.steps { background: #f1f5f9; padding: 10px; border-left: 4px solid var(--primary); border-radius: 4px; margin-top: 5px; }
+
+.steps ul { margin: 0; padding-left: 20px; }
+
+/* Welcome Box Styling */
+.welcome-box { 
+    background: #ffffff; 
+    padding: 30px; 
+    border-radius: 15px; 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
+    line-height: 1.6;
 }
 
-.steps ul { 
-    margin: 0; 
-    padding-left: 20px; 
+.welcome-box a { 
+    color: #25D366; 
+    font-weight: bold; 
+    text-decoration: none; 
 }
