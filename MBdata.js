@@ -1,4 +1,35 @@
 const appData = {
+    "welcome": {
+        "title": { "en": "Welcome to Success Zone", "hi": "Success Zone में आपका स्वागत है" },
+        "content": {
+            "en": `
+                <div class="welcome-box">
+                    <h3>Dear Students,</h3>
+                    <p>Welcome to <b>Success Zone</b>! This app is designed to make Mathematics easy, interactive, and accessible for everyone.</p>
+                    <p><b>About App:</b> A comprehensive digital guide for competitive maths. Perfect for students from Class 5 to 10 and aspirants preparing for various scholarship and competitive exams.</p>
+                    <hr>
+                    <h4>Contact Us:</h4>
+                    <p>📧 Email: contact@successzone.com</p>
+                    <p>📱 Mobile: +91 98765 43210</p>
+                    <p>💬 <a href="https://wa.me/919876543210">Chat on WhatsApp</a></p>
+                    <p>📍 Address: Prashant Sagar, Education Hub, India</p>
+                </div>
+            `,
+            "hi": `
+                <div class="welcome-box">
+                    <h3>प्रिय छात्रों,</h3>
+                    <p><b>Success Zone</b> में आपका स्वागत है! यह ऐप गणित को आसान, इंटरैक्टिव और सभी के लिए सुलभ बनाने के लिए बनाया गया है।</p>
+                    <p><b>ऐप के बारे में:</b> प्रतियोगी गणित (Competitive Maths) के लिए एक व्यापक डिजिटल गाइड। कक्षा 5 से 10 तक के छात्रों और विभिन्न छात्रवृत्ति व प्रतियोगी परीक्षाओं की तैयारी करने वालों के लिए विशेष उपयोगी।</p>
+                    <hr>
+                    <h4>संपर्क करें:</h4>
+                    <p>📧 ईमेल: contact@successzone.com</p>
+                    <p>📱 मोबाइल: +91 98765 43210</p>
+                    <p>💬 <a href="https://wa.me/919876543210">WhatsApp पर बात करें</a></p>
+                    <p>📍 पता: प्रशांत सागर, एजुकेशन हब, भारत</p>
+                </div>
+            `
+        }
+    },
     "number_system": {
         "title": { "en": "Number System", "hi": "संख्या पद्धति" },
         "definition": { 
