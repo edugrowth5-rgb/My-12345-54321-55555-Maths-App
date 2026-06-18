@@ -1,0 +1,7 @@
+{
+  "name": "Success Zone Maths",
+  "short_name": "SZMaths",
+  "start_url": "MBindex.html",
+  "display": "standalone",
+  "background_color": "#ffffff"
+}
