@@ -1,6 +1,6 @@
 const CACHE_NAME = 'success-zone-v1';
 self.addEventListener('install', e => {
-    e.waitUntil(caches.open(CACHE_NAME).then(c => c.addAll(['MBindex.html', 'MBstyle.css', 'MBscript.js', 'MBdata.js'])));
+    e.waitUntil(caches.open(CACHE_NAME).then(c => c.addAll(['index.html', 'MBstyle.css', 'MBscript.js', 'MBdata.js'])));
 });
 self.addEventListener('fetch', e => {
     e.respondWith(caches.match(e.request).then(res => res || fetch(e.request)));
