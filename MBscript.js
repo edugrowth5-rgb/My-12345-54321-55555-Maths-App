@@ -139,8 +139,7 @@ const app = {
 function toggleSidebar() { document.getElementById('sidebar').classList.toggle('collapsed'); }
 function switchLanguage() { app.lang = (app.lang === 'en') ? 'hi' : 'en'; app.loadSidebar(); app.render(); }
 function changeFontSize(val) { fontSize += val; app.render(); }
-
-// Fullscreen function 
+// Fullscreen function yahan add karein
 function toggleFullScreen() {
     const elem = document.documentElement;
     if (!document.fullscreenElement && !document.webkitFullscreenElement) {
