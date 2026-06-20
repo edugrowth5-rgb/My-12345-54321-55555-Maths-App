@@ -6,7 +6,7 @@ const ASSETS = [
   "MBdata1.js",
   "MBchapter.js",
   "MBquiz1.js",
-  "icon.png"
+  "Gemini_Generated_Image_5m7meu5m7meu5m7m.png"
 ];
 
 // Install Event
