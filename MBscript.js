@@ -139,4 +139,23 @@ const app = {
 function toggleSidebar() { document.getElementById('sidebar').classList.toggle('collapsed'); }
 function switchLanguage() { app.lang = (app.lang === 'en') ? 'hi' : 'en'; app.loadSidebar(); app.render(); }
 function changeFontSize(val) { fontSize += val; app.render(); }
+
+// Fullscreen function 
+function toggleFullScreen() {
+    const elem = document.documentElement;
+    if (!document.fullscreenElement && !document.webkitFullscreenElement) {
+        if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+        } else if (elem.webkitRequestFullscreen) {
+            elem.webkitRequestFullscreen();
+        }
+    } else {
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+        }
+    }
+}
+
 window.onload = () => { app.loadSidebar(); app.render(); };
