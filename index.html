@@ -5,16 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Success Zone | Competitive Maths</title>
     <link rel="stylesheet" href="MBstyle.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="icon.png" type="image/png">
+    <meta name="theme-color" content="#007bff">
 </head>
 <body>
     <header class="top-bar">
         <button id="menu-btn" onclick="toggleSidebar()">☰</button>
         <h1>Success Zone</h1>
-        <div class="controls">
+        <div class="controls-right">
             <button onclick="switchLanguage()" style="background: #f59e0b;">EN / HI</button>
             <button onclick="changeFontSize(1)">A+</button>
             <button onclick="changeFontSize(-1)">A-</button>
-            <button onclick="toggleFullScreen()">Full</button>
+            <button onclick="toggleFullScreen()">⛶ Full</button>
         </div>
     </header>
     
@@ -27,6 +30,15 @@
         <main id="content-area" class="content">
             </main>
     </div>
+    
+    <script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('MBsw.js')
+        .then(() => console.log("Service Worker (MB) Registered successfully!"))
+        .catch((err) => console.log("Service Worker registration failed: ", err));
+    }
+</script>
+
     
     <script src="MBdata1.js"></script>
     <script src="MBquiz1.js"></script>
