@@ -33,11 +33,14 @@
     
     <script>
     if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('MBsw.js')
-        .then(() => console.log("Service Worker (MB) Registered successfully!"))
-        .catch((err) => console.log("Service Worker registration failed: ", err));
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('MBsw.js')
+            .then(reg => console.log('SW registered!', reg))
+            .catch(err => console.log('SW failed!', err));
+        });
     }
 </script>
+
 
     
     <script src="MBdata1.js"></script>
