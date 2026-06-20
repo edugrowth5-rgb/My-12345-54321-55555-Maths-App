@@ -44,3 +44,15 @@ nav button { display: block; width: 100%; text-align: left; margin-bottom: 5px; 
     font-weight: bold; 
     text-decoration: none; 
 }
+
+.correct { background-color: #28a745 !important; color: white !important; }
+.wrong { background-color: #dc3545 !important; color: white !important; }
+.option-btn { display: block; width: 100%; margin: 5px 0; padding: 10px; cursor: pointer; border: 1px solid #ccc; border-radius: 5px; }
+
+.option-btn { 
+    display: block; width: 100%; margin: 10px 0; padding: 12px; 
+    border: 1px solid #ddd; border-radius: 8px; cursor: pointer; 
+}
+.correct { background: #28a745 !important; color: white; }
+.wrong { background: #dc3545 !important; color: white; }
+
